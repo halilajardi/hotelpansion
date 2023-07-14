@@ -1,0 +1,9 @@
+<div class="login-section text-center position-relative">
+    <h2 *ngIf="!authService.isUserLoggedIn()">Welcome Back</h2>
+    <form class="d-flex flex-column" (ngSubmit)="loginUser()" *ngIf="!authService.isUserLoggedIn()">
+      <input class="form-input width-full text-fw--regular" type="text" name="email" placeholder="Email Address" [(ngModel)]="email">
+      <input class="form-input width-full text-fw--regular" type="password" name="Pass" placeholder="Password" [(ngModel)]="password">
+      <input class="form-input--submit width-full text-white text-fw--medium" type="submit" name="log" id="log" value="Login to your Account">
+    </form>
+    <p [class.text-danger]="!authService.isUserLoggedIn()">{{message}}</p>
+</div>

@@ -1,0 +1,26 @@
+<section class="section overflow-x blog-post-entry hero-bg-light" id="rooms">
+    <div class="container animate__animated animate__fadeInLeft">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h3 class="o-0" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Find Your True Space</h3>
+                <button class="text-white btn-menu-selce o-0" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">View All</button>
+            </div>
+        </div>
+        <div class="row">
+            <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 post o-0"
+                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"
+                *ngFor="let room of allRooms"
+            >
+                <div class="media media-custom d-block mb-4 h-100 rounded-5 overflow-hidden">
+                    <img [src]="room.img" alt={{room.title}} class="img-fluid">
+                    <div class="media-body">
+                        <br>
+                        <h2 class="mt-0 mb-3">{{room.title}}</h2>
+                        <p>{{room.describe}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

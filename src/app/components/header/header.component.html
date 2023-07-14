@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<section
+    class="site-hero overlay"
+    id="top"
+    style="background-image: url(https://pansion.hr/static/media/main.5adee8b7b8467c60ac9637f1c6aa2507.svg);"
+>
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center position-relative">
+            <div class="col-md-10 text-end" data-aos="fade-up">
+                <h1 class="heading">Welcome to <br>Pansion Selce</h1>
+            </div>
+        </div>
+    </div>
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon"><span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+<app-modal id="modal-1">
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn-close" (click)="modalService.close();"></button>
+    </div>
+    <app-login></app-login>
+</app-modal>

@@ -1,0 +1,21 @@
+<section class="overflow-x py-5 {{heroBg}}" id="about2">
+    <div class="container pt-5">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-6 ml-auto order-lg-2 position-relative mb-5 o-0" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <figure class="img-absolute">
+                    <img src="https://pansion.hr/static/media/food-1.b3b115cfc6965d410c63.jpg" alt="[object Object]" class="img-fluid">
+                </figure>
+                <div class="position-relative d-flex justify-content-end z-0">
+                    <img src="https://pansion.hr/static/media/mask-bg.e49bddd849f0f8bc39ca11e4807f76a9.svg" alt="mask wrap" class="mask-hero w-100">
+                    <img [src]="imageUrl" alt="[object Object]" class="img-fluid rounded w-100 p-extra z-index-1">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 order-lg-1 o-0" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <div [innerHTML]="firstTitle"></div>
+                <p [innerHTML]="firstParag"></p>
+                <div [innerHTML]="secondTitle"></div>
+                <p [innerHTML]="secondParag"></p>
+            </div>
+        </div>
+    </div>
+</section>
